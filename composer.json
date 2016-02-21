@@ -7,5 +7,10 @@
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "^92.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fm\\": "src/"
+        }
     }
 }
