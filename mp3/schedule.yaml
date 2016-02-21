@@ -1,28 +1,28 @@
 ---
 monday:
   bitrate: 128
-  file: 128.mp3
+  file: mp3/128.mp3
 
 tuesday:
   bitrate: 320
-  file: 320.mp3
+  file: mp3/320.mp3
 
 wednesday:
   bitrate: 320
-  file: 320.mp3
+  file: mp3/320.mp3
 
 thursday:
   bitrate: 128
-  file: 128.mp3
+  file: mp3/128.mp3
 
 friday:
   bitrate: 128
-  file: 128.mp3
+  file: mp3/128.mp3
 
 saturday:
   bitrate: 320
-  file: 320.mp3
+  file: mp3/320.mp3
 
 sunday:
   bitrate: 128
-  file: 128.mp3
+  file: mp3/128.mp3
