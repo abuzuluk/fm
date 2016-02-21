@@ -51,17 +51,17 @@
 
 //settings, please fill this variables with your own
 if (microtime(true) % 2) {
-    $mp3 = getenv('HEROKU_APP_DIR') . './public/mp3/128.mp3';
+    $mp3 = __DIR__ . '/mp3/128.mp3';
     $bitrate = 128;
 } else {
-    $mp3 = getenv('HEROKU_APP_DIR') . './public/mp3/320.mp3';
+    $mp3 = __DIR__ . '/mp3/320.mp3';
     $bitrate = 320;
 }
 
 error_log(print_r(compact('mp3', 'bitrate'), true));
 
 //adjust for your system. use a unique lock file for each mp3 you serve.
-$tmp = getenv('HEROKU_APP_DIR') . "./public/${mp3}.txt";
+$tmp = __DIR__ . "/${mp3}.txt";
 
 //Enable debug to get textual output in a browser. The stream is not listenable with debug enabled.
 $debug = getenv('DEBUG');
