@@ -61,7 +61,7 @@ if (microtime(true) % 2) {
 error_log(print_r(compact('mp3', 'bitrate'), true));
 
 //adjust for your system. use a unique lock file for each mp3 you serve.
-$tmp = __DIR__ . "/${mp3}.txt";
+$tmp = "${mp3}.txt";
 
 //Enable debug to get textual output in a browser. The stream is not listenable with debug enabled.
 $debug = getenv('DEBUG');
