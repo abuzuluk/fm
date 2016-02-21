@@ -1,4 +1,7 @@
 {
+    "name": "bambambam/fm",
+    "description": "MP3 streaming fm radio",
+    "license": "GPL-3.0",
     "require": {
         "php": "^5.6"
     },
