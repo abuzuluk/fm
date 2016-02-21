@@ -58,6 +58,8 @@ if (microtime(true) % 2) {
     $bitrate = 320;
 }
 
+error_log(print_r(compact('mp3', 'bitrate'), true));
+
 //adjust for your system. use a unique lock file for each mp3 you serve.
 $tmp = getenv('HEROKU_APP_DIR') . "./public/${mp3}.txt";
 
@@ -67,7 +69,7 @@ $debug = getenv('DEBUG');
 //disable error reporting if you like
 error_reporting(E_ALL);
 
-
+error_log(print_r(compact('tmp', 'debug'), true));
 // NO EDITING REQUIRED BELOW THIS LINE, EDIT AT OWN RESPONSABILITY //
 
 //SUPPORT FUNCTIONS
@@ -152,7 +154,7 @@ if ($debug)
     print ("framesize: " . $framesize);
 
 $h = fopen($file, "rb");
-
+error_log(print_r(compact('h'), true));
 if (file_exists($tmp)) {
     //read our position from file.
     $ff       = fopen($tmp, "r");
