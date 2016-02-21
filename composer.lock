@@ -4,9 +4,146 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0b0062b0c787624f3442539eecb677b2",
-    "content-hash": "3c117474412f1f12f3fc41318120d252",
-    "packages": [],
+    "hash": "6dffef343ed49b58607a6d4e0cdb328f",
+    "content-hash": "8912f1c02c911b8c7408f58c7a1bb62a",
+    "packages": [
+        {
+            "name": "symfony/options-resolver",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/options-resolver.git",
+                "reference": "bc7ee3ef3905f7c21fbed4e921cb39d6518b1300"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/bc7ee3ef3905f7c21fbed4e921cb39d6518b1300",
+                "reference": "bc7ee3ef3905f7c21fbed4e921cb39d6518b1300",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\OptionsResolver\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony OptionsResolver Component",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "config",
+                "configuration",
+                "options"
+            ],
+            "time": "2016-01-21 09:38:31"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "3cf0709d7fe936e97bee9e954382e449003f1d9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/3cf0709d7fe936e97bee9e954382e449003f1d9a",
+                "reference": "3cf0709d7fe936e97bee9e954382e449003f1d9a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-02-02 13:44:19"
+        },
+        {
+            "name": "zoo-zoo/aws-enum",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zoo-zoo/aws-enum.git",
+                "reference": "eb090795bd99f1e06ef7606d3094fff6e5e44672"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zoo-zoo/aws-enum/zipball/eb090795bd99f1e06ef7606d3094fff6e5e44672",
+                "reference": "eb090795bd99f1e06ef7606d3094fff6e5e44672",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Aws": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Standalone Aws Enum",
+            "time": "2015-05-16 21:30:13"
+        }
+    ],
     "packages-dev": [
         {
             "name": "heroku/heroku-buildpack-php",

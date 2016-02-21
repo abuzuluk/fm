@@ -3,7 +3,10 @@
     "description": "MP3 streaming fm radio",
     "license": "GPL-3.0",
     "require": {
-        "php": "^5.6"
+        "php": "^5.6",
+        "symfony/options-resolver": "^3.0",
+        "symfony/yaml": "^3.0",
+        "zoo-zoo/aws-enum": "^1.0"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "^92.0"
