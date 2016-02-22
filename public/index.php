@@ -1,11 +1,16 @@
 <?php
 
+if (empty($_GET['tz'])) {
+    include __DIR__ . '/../views/index.phtml';
+    return;
+}
+
 require __DIR__ . '/../vendor/autoload.php';
 
 error_reporting(-1);
 set_time_limit(0);
 
-$tz = isset($_GET['tz']) ? $_GET['tz'] : 'UTC';
+$tz = $_GET['tz'];
 if (!in_array($tz, DateTimeZone::listIdentifiers(), true)) {
     $tz = 'UTC';
 }
